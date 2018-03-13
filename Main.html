@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	
+	
+	<title>PIXEL</title>
+</head>
+
+<body>
+
+	<div id="pageTitle">Pixel: Art Maker</div>
+
+	<div id="main">
+		
+		<table id="workTable">
+			
+			<tr id="row1">
+				<td class="prop">
+
+					Height<br>
+					Width<br>
+					Color<br>
+
+
+
+				</td>
+				<td class="prop">
+
+					<input type="number" id="gridHeight">
+					<input type="number" id="gridWidth">
+					<input type="color" id="gridColor">
+
+
+				</td>
+				<td rowspan="3" id="pixel" >
+					<center>
+						<table id="pixelCanvas"></table>
+					</center>
+
+				</td>
+			</tr>
+
+			<tr id="row2" style="height: 10%;">
+
+				<td class="prop"><button id="reset">Reset</button></td>
+				<td class="prop"><button id="go">Go</button></td>
+			</tr>
+			
+			<tr id="row3">
+				<td class="prop" colspan="2" style="height: 10%;">
+					<!-- <button id="btn-Convert-Html2Image">Download</button> -->
+					<input id="btn-Preview-Image" type="button" value="Preview" />
+					<a id="btn-Convert-Html2Image" href="#">Download</a>
+					<br/>
+				    <h3>Preview :</h3>
+				    <div id="previewImage">
+				    </div>
+				</td>
+			</tr>
+		
+		</table>
+
+	</div>
+
+<!-- 
+
+	<h2>Choose Grid</h2>
+	<form id="sizePicker">
+		Height
+		<input type="number" id="gridHeight" name="height" min="1" value="1">
+
+		Width
+		<input type="number" id="gridWidth" name="width" min="1" value="1">
+
+		<input type="submit">
+	</form>
+
+	<h2>Pick a color for the art</h2>
+
+	<input type="color" id="colorPicker">
+
+
+	<h2>Canvas :</h2>
+	<table id="pixelCanvas"></table>
+
+
+	<input id="btn-Preview-Image" type="button" value="Preview" />
+    <a id="btn-Convert-Html2Image" href="#">Download</a>
+    <br/>
+    <h3>Preview :</h3>
+    <div id="previewImage">
+    </div>
+
+
+ -->
+
+<script type="text/javascript" src="jquery-3.3.1.min.js"></script>
+
+<script type="text/javascript" src="html2canvas.js"></script>
+
+<script type="text/javascript" src="script.js"></script>
+
+
+
+
+
+</body>
+
+</html>
